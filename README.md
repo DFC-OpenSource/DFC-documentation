@@ -9,19 +9,20 @@ Repositories allow commits up to 100MB per file. For large binary files, release
 But even in releases, you need to split the binaries in up to 2048MB parts.
 
 To split the file in 2GB parts:
-
+```
 dd if=bigfile of=file1 count=2048 bs=1M
 dd if=bigfile skip=2048 of=file2 count=2048 bs=1M
 dd if=bigfile skip=4096 of=file3 count=2048 bs=1M
 ...
+```
 
 To rebuild the file:
-
+```
 cat file1 > bigfile
 cat file2 >> bigfile
 cat file3 >> bigfile
 ...
-
+```
 For further details about large binaries in github:
 
 https://help.github.com/articles/distributing-large-binaries/
