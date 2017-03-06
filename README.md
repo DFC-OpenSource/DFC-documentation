@@ -2,6 +2,16 @@
 
 This repository acts as an easy path for all the documentation related to the Dragon Fire Card projects. You may also find documentation in the project's repository itself.
 
+# DFC Community Questions/Issues
+
+Option 1: For small questions. Use the DFC Open Source Community Forum located in the community projects:
+```
+https://github.com/orgs/DFC-OpenSource/projects/1
+```
+Option 2: For elaborated questions and special answer requiremens (long texts, schemes and files). Open an issue under a related repository. Example:
+```
+https://github.com/DFC-OpenSource/DFC-sdk/issues
+```
 # Uploading Large Files
 
 Repositories allow commits up to 100MB per file. For large binary files, releases is the best option. On this way, a repository contains the project's code, and releases contains the binaries available for download. This also helps to keep track of different binary versions.
@@ -24,11 +34,13 @@ cat file3 >> bigfile
 ...
 ```
 For further details about large binaries in github:
-
+```
 https://help.github.com/articles/distributing-large-binaries/
+```
 
 For an example of releases with binaries:
-
-https://github.com/DFC-OpenSource/ox-ctrl/releases
+```
+https://github.com/DFC-OpenSource/DFC-sdk/releases
+```
 
 You can create a release under 'Releases' > 'Create a new release' in the repository. It will include automatically the tar.gz with the code. You will also have an option to include large binary files. If you don't have any file in the repository, create a README.md explaining the repository. A hint is organizing the releases with tags like v1.0, v1.1, ... it is up to you.
